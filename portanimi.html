@@ -1,0 +1,384 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Ajay G - Portfolio</title>
+
+<style>
+
+/* ---------- BODY ---------- */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #e0e7ff, #f3e8ff);
+    color: #222;
+    scroll-behavior: smooth;
+}
+
+
+/* ---------- TITLE ---------- */
+
+#title {
+    color: #1d4ed8;
+    font-size: 45px;
+    margin-top: 30px;
+
+    animation: titleAnimation 1.5s ease;
+}
+
+.subtitle {
+    color: #555;
+    animation: fadeIn 2s ease;
+}
+
+
+/* ---------- MENU ---------- */
+
+.menu {
+    width: 85%;
+    margin: 25px auto;
+
+    background: rgba(255,255,255,0.8);
+    padding: 18px;
+
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+
+    animation: slideDown 1s ease;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #1d4ed8;
+    margin: 0 10px;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #e11d48;
+    transform: scale(1.1);
+}
+
+
+/* ---------- IMAGE ---------- */
+
+.profile {
+    width: 280px;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 6px solid white;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+
+    animation: zoomIn 1.5s ease;
+
+    transition: 0.5s;
+}
+
+.profile:hover {
+    transform: scale(1.08) rotate(2deg);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+}
+
+
+/* ---------- MAIN BOX ---------- */
+
+.box {
+    width: 600px;
+    max-width: 85%;
+
+    background: rgba(255,255,255,0.9);
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    margin: 35px auto;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+    animation: slideUp 1.5s ease;
+
+    transition: 0.4s;
+}
+
+.box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+
+/* ---------- HEADINGS ---------- */
+
+h2 {
+    color: #1e40af;
+
+    border-bottom: 2px solid #93c5fd;
+
+    padding-bottom: 8px;
+
+    transition: 0.3s;
+}
+
+h2:hover {
+    color: #e11d48;
+    letter-spacing: 1px;
+}
+
+
+/* ---------- PARAGRAPH ---------- */
+
+p {
+    font-size: 18px;
+    color: #444;
+}
+
+
+/* ---------- SKILLS ---------- */
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background: #2563eb;
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background: #e11d48;
+    transform: translateY(-5px);
+}
+
+
+/* ---------- ANIMATIONS ---------- */
+
+@keyframes titleAnimation {
+
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideDown {
+
+    from {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes slideUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes zoomIn {
+
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width: 600px) {
+
+    #title {
+        font-size: 35px;
+    }
+
+    .menu {
+        line-height: 35px;
+    }
+
+    .profile {
+        width: 220px;
+        height: 220px;
+    }
+
+    .box {
+        width: 85%;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- TITLE -->
+
+<center>
+
+<h1 id="title">My Portfolio</h1>
+
+<p class="subtitle">
+Welcome to my personal portfolio
+</p>
+
+</center>
+
+
+<!-- MENU -->
+
+<div class="menu">
+
+<center>
+
+<strong>
+
+<a href="#name">Name</a>
+<a href="#college">College</a>
+<a href="#department">Department</a>
+<a href="#skills">Skills</a>
+<a href="#hobbies">Hobbies</a>
+<a href="#contact">Contact</a>
+
+</strong>
+
+</center>
+
+</div>
+
+
+<!-- PROFILE IMAGE -->
+
+<center>
+
+<img class="profile" src="ajay.jpeg">
+
+</center>
+
+
+<!-- CONTENT -->
+
+<div class="box">
+
+<center>
+
+
+<h2 id="name">Name</h2>
+
+<p>Ajay G</p>
+
+
+<h2 id="college">College</h2>
+
+<p>
+Sri Saraswathi Theyagaraja College - Pollachi
+</p>
+
+
+<h2 id="department">Department</h2>
+
+<p>
+MCA - 1st Year
+</p>
+
+
+<h2 id="skills">Skills</h2>
+
+<div class="skills">
+
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">C++</span>
+<span class="skill">Python</span>
+
+</div>
+
+
+<h2 id="hobbies">Hobbies</h2>
+
+<p>
+Reading Books 📚
+</p>
+
+<p>
+Listening Music 🎧
+</p>
+
+<p>
+Playing Volleyball 🏐
+</p>
+
+
+<h2 id="contact">Contact</h2>
+
+<p>
+📧 ajayajay45686@gmail.com
+</p>
+
+<p>
+📱 8870779712
+</p>
+
+
+</center>
+
+</div>
+
+
+</body>
+</html>
+```
